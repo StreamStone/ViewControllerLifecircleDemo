@@ -2,7 +2,7 @@
 //  ViewController.m
 //  ViewControllerLifecircleDemo
 //
-//  Created by wangqinglu on 16/7/25.
+//  Created by streamstone on 16/7/25.
 //  Copyright © 2016年 xs. All rights reserved.
 //
 
@@ -16,6 +16,9 @@
 @end
 
 @implementation ViewController
+-(void)dealloc {
+    NSLog(@"%s, %d, obj=%@", __func__, __LINE__, self);
+}
 
 - (void)viewDidLoad {
     NSLog(@"%s, %d, obj=%@", __func__, __LINE__, self);
